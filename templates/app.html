@@ -4,8 +4,8 @@
 	<title>Bangaluru Home Price Prediction</title>
 	<link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/en/b/b5/DTU%2C_Delhi_official_logo.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="app.js"></script>
-	<link rel="stylesheet" href="app.css">
+    <!-- <script src="app.js"></script> -->
+	<!-- <link rel="stylesheet" href="app.css"> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
@@ -39,7 +39,7 @@
     var location = document.getElementById("uiLocations");
     var estPrice = document.getElementById("uiEstimatedPrice");
   
-    var url = "http://127.0.0.1:5000/predict_home_price"; 
+    var url = "http://165.22.208.124:5000/predict_home_price"; 
   
     $.post(url, {
         total_sqft: parseFloat(sqft.value),
@@ -55,7 +55,7 @@
   
   function onPageLoad() {
     console.log( "document loaded" );
-    var url = "http://127.0.0.1:5000/get_location_names"; 
+    var url = "http://165.22.208.124:5000/get_location_names"; 
     $.get(url,function(data, status) {
         console.log("got response for get_location_names request");
         if(data) {
