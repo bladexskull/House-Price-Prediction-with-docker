@@ -1,7 +1,9 @@
 This is a House Price Prediction Website Using linear Regresion model of ML for price prediction
 
 Note: To Run this project in you system:
+
 change IP in app.html file to your machine ip or local ip
+
 i.e In  server/templates/app.html
 change 165.22.208.124 to your machine IP or localIP 
 
